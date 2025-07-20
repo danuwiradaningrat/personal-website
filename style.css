@@ -272,3 +272,38 @@ a{
   }
 }
 
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .hero-avatar img {
+    width: 250px;
+    height: 250px;
+    padding: 1rem 0;
+  }
+
+  .hero-text {
+    margin: 0;
+    padding: 0.5rem;
+  }
+
+  #about {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .logo {
+    flex-direction: column;
+  }
+}
+
