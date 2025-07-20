@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --font-heading: 2rem;
+    --font-subheading: 1.25rem;
+    --font-body: 16px;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'inter', sans-serif;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    padding-top: var(--spacing-lg);
+}
+
+nav h1{
+    font-size: var(--font-subheading);
+    padding-left: var(--spacing-lg);
+    
+}
+
+a{
+
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--spacing-sm);
+    gap: 0;
+
+}
+
+.hero{
+    padding: var(--spacing-lg);
+    margin: var(--spacing-md);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+}
+
+.hero-text{
+    justify-content: center;
+    align-items: center;
+    padding-top: var(--spacing-lg);
+    padding-right: var(--spacing-lg);
+}
+
+.hero-text h1{
+    gap: var(--spacing-md);
+    font-size: var(--font-heading);
+    padding-bottom: var(--spacing-md);
+}
+
+.hero-avatar img{
+    width: 350px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: var(--spacing-lg);
+}
+
+.hero-text p{
+    font-size: var(--font-body);
+    font-weight: 400;
+    padding-right: var(--spacing-md);
+    text-wrap: wrap;
+}
+
+#about{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-xl);
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-md);
+    padding-top: var(--spacing-xl);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: var(--spacing-md);
+  text-align: left;
+}
+
+.about-content img{
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+}
+
+.about-content p{
+
+    padding: var(--spacing-lg);
+    font-size: var(--font-body);
+    max-width: 500px;
+    text-align: left;
+}
+
+#skills{
+    text-align: center;
+    gap: var(--spacing-xl);
+    padding-top: var(--spacing-lg);
+}
+
+
+
+#skills h1{
+
+    padding-bottom: var(--spacing-md);
+}
+
+.logo{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+  width: 100px;
+  height: 100px;
+  padding: var(--spacing-md);
+  gap: var(--spacing-md);
+}
+
+#contact {
+  text-align: center;
+  padding: var(--spacing-xl);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: var(--spacing-md);
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: var(--spacing-sm);
+  font-size: var(--font-body);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.contact-form button {
+  padding: var(--spacing-sm);
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #333;
+}
+
+/* Responsive untuk tablet (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    padding: var(--spacing-md);
+    margin: 0;
+  }
+
+  .hero-avatar img {
+    width: 250px;
+    height: 250px;
+    padding: var(--spacing-md);
+  }
+
+  #about {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-lg);
+  }
+
+  .about-left img {
+    width: 200px;
+    margin: var(--spacing-md) auto;
+  }
+
+  .about-right p {
+    padding: var(--spacing-sm);
+  }
+
+  .logo {
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+  }
+
+  .logo img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .contact-form {
+    padding: 0 var(--spacing-md);
+  }
+}
+
+/* Responsive untuk HP kecil (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  nav h1 {
+    font-size: 1rem;
+  }
+
+  .hero-avatar img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+
+  .contact-form button {
+    font-size: 14px;
+  }
+}
+
